@@ -1,0 +1,121 @@
+@media screen and (max-width: 934px) {
+    body{
+        justify-content: center;
+    }
+    header, main section{
+        flex-direction: column;
+    }
+
+    main section{
+        display: flex;
+        align-items: center;
+    }
+
+    .text-main-content p{
+        margin: 32px 0 0 0;
+    }
+
+    header h1, .text-main-content{
+        width: 100%;
+    }
+
+    .image-container, .main-image-container{
+        margin: 0 0 48px 0;
+        justify-content: center;
+    }
+
+    .call-to-action, .container-button{
+        position: static;
+        margin-top: 48px;
+    }
+}
+
+@media screen and (max-width: 634px) {
+    header{
+        margin: 96px 0 64px 0;
+    }
+
+    main section p, header h1{
+        font-size: 1em;
+    }   
+
+    .call-to-action, .main-call-to-action, .form-call-to-action{
+        width: 204px;
+    }
+
+    form label, .call-to-action, .main-call-to-action, .form-call-to-action{
+        font-size: 0.88em;
+    }
+
+    h2{
+        font-size: 1.6em;
+    }
+
+    #whatsapp{
+        width: 56px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #whatsapp{
+        width: 48px;
+    }   
+}
+
+@media screen and (max-width: 320px) {
+    main section p, header h1{
+        font-size: 0.9em;
+    }   
+
+    form label{
+        font-size: 0.65em;
+    }
+
+    .call-to-action, .main-call-to-action, .form-call-to-action{
+        font-size: 0.75em;
+    }
+
+    .call-to-action, .main-call-to-action, .form-call-to-action{
+        width: 184px;
+        height: 40px;
+    }
+
+    h2{
+        font-size: 1.35em;
+    }
+
+    #whatsapp{
+        width: 40px;
+    }   
+}
+
+@media screen and  (min-width: 1322px) {
+    .container-button{
+        justify-content: start;
+        left: 15vw;
+    }
+}
+
+@media screen and  (min-width: 1645px) {
+    .container-button{
+        left: 18vw;
+    }
+}
+
+@media screen and  (min-width: 2000px) {
+    .container-button{
+        left: 19vw;
+    }
+}
+
+@media screen and  (min-width: 2400px) {
+    .container-button{
+        left: 21vw;
+    }
+}
+
+@media screen and  (min-width: 2800px) {
+    .container-button{
+        left: 22vw;
+    }
+}

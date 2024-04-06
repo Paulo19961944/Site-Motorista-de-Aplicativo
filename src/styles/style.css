@@ -1,0 +1,207 @@
+/*ESTILO GLOBAL*/
+*{
+    margin: 0; /*Zera a Margem*/
+    padding: 0; /*Zera o Espaçamento*/
+    box-sizing: border-box; /*Todos os conteúdos dentro da box model*/
+}
+
+/*CONTEÚDO INTEIRO*/
+body{
+    font-family: "Cormorant", serif; /*Fonte do Google*/
+    display: flex; /*Flexbox*/
+    flex-direction: column; /*Texto em Colunas*/
+    align-items: center; /*Alinha ao Centro no Eixo Perpendicular*/
+    background-color: #080808; /*Cor de Fundo Preto*/
+    color: white; /*Cor do Texto Branca*/
+    max-width: 100vw; /*Largura máxima em toda a tela*/
+    min-height: 100vh; /*Altura minima em toda a tela*/
+}
+
+/*DESTAQUES DO TEXTO*/
+span{
+    color: #50ABD2; /*Cor da fonte - Azul*/
+}
+
+header{
+    width: 80%;
+    margin: 96px 0 160px 0;
+    display: flex;
+}
+
+/*TITULO PRINCIPAL*/
+header h1{
+    width: 70%; /*Largura de 70%*/
+    font-size: 1.5em; /*Tamanho da fonte de 150%*/
+    font-weight: 400; /*Peso da Fonte*/
+}
+
+/*CONTAINER DO CABEÇALHO*/
+.image-container{
+    display: flex; /*Flexbox*/
+}
+
+/*CONTEÚDO CABEÇALHO*/
+.content{
+    position: relative; /*Posição Relativa*/
+    display: flex; /*Flexbox*/
+    flex-direction: column; /*Texto em Colunas*/
+    align-items: center; /*Alinha ao Centro no eixo perpendicular*/
+}
+
+/*IMAGENS CABEÇALHO E CARRO PRETO*/
+#foto-perfil, #foto-carro-preto{
+    border-radius: 8px; /*Arredonda a Borda*/
+}
+
+/*BOTÃO DO CABEÇALHO*/
+.container-button{
+    position: absolute; /*Posição Absoluta ao Cabeçalho*/
+    bottom: 32px; /*Coloca o elemento na parte inferior e dá uma posiciona 32px acima*/
+    display: flex; /*Flexbox*/
+    justify-content: center; /*Alinha ao Centro no eixo principal*/
+}
+
+/*Botão Call to Action*/
+.call-to-action{
+    position: absolute; /*Posição Absoluta*/
+    bottom: 32px;
+    font-size: 1em;
+    border: none;
+    background-color: #40D00D;
+    color: #fff;
+    width: 365px;
+    height: 48px;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.call-to-action, main section h2{
+    font-family: "Noto Sans", sans-serif;
+}
+
+.call-to-action, .main-call-to-action, .form-call-to-action{
+    animation: pulse 2s infinite ease-in-out;
+}
+
+.call-to-action:hover, .main-call-to-action:hover, .form-call-to-action:hover{
+    animation: pulse 3s infinite ease-in-out;
+    cursor: pointer;
+    transform: scale(1.03)
+}
+
+main{
+    width: 80%;
+}
+
+main section{
+    margin: 96px 0 160px 0;
+    display: flex;
+}
+
+main section p{
+    width: 100%;
+    margin: 0 16px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+h2{
+    font-weight: 300;
+    margin: 16px 0;
+    font-size: 2.5em;
+}
+
+.text-main-content{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+.text-main-content p{
+    margin: 32px 0 0 48px;
+}
+
+.main-call-to-action{
+    margin-top: 88px;
+    position: relative;
+    bottom: 0;
+    font-size: 1em;
+    border: none;
+    background-color: #40D00D;
+    color: #fff;
+    width: 365px;
+    height: 48px;
+    font-family: "Noto Sans", sans-serif;
+
+}
+
+.main-image-container{
+    display: flex;
+    margin: 64px 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Noto Sans", sans-serif;
+}
+
+form h2{
+    margin-bottom: 48px;
+}
+
+form label{
+    font-size: 1.2em;
+    text-align: center;
+}
+
+form input{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.95em;
+    height: 32px;
+    margin: 16px 0 32px 0;
+    width: 80vw;
+}
+
+.form-call-to-action{
+    margin: 16px 0 96px 0;
+    font-size: 1em;
+    border: none;
+    background-color: #40D00D;
+    color: #fff;
+    width: 365px;
+    height: 48px;
+    font-family: "Noto Sans", sans-serif;
+}
+
+#mensagemValidacao{
+    text-align: center;
+    width: 20vw;
+    margin-bottom: 64px;
+}
+
+#whatsapp{
+    animation: pulse 1.2s infinite ease-in-out;
+    width: 80px;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.05);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
