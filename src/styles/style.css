@@ -22,10 +22,11 @@ span{
     color: #50ABD2; /*Cor da fonte - Azul*/
 }
 
+/*CABEÇALHO*/
 header{
-    width: 80%;
-    margin: 96px 0 160px 0;
-    display: flex;
+    width: 80%; /*Largura de 80%*/
+    margin: 96px 0 160px 0; /*Margem (Topo - Direita - Embaixo - Esquerda)*/
+    display: flex; /*Flexbox*/
 }
 
 /*TITULO PRINCIPAL*/
@@ -35,7 +36,7 @@ header h1{
     font-weight: 400; /*Peso da Fonte*/
 }
 
-/*CONTAINER DO CABEÇALHO*/
+/*CONTAINER DA IMAGEM*/
 .image-container{
     display: flex; /*Flexbox*/
 }
@@ -53,7 +54,7 @@ header h1{
     border-radius: 8px; /*Arredonda a Borda*/
 }
 
-/*BOTÃO DO CABEÇALHO*/
+/*CONTAINER DO BOTÃO DO CABEÇALHO*/
 .container-button{
     position: absolute; /*Posição Absoluta ao Cabeçalho*/
     bottom: 32px; /*Coloca o elemento na parte inferior e dá uma posiciona 32px acima*/
@@ -61,147 +62,148 @@ header h1{
     justify-content: center; /*Alinha ao Centro no eixo principal*/
 }
 
-/*Botão Call to Action*/
+/*BOTÃO CALL TO ACTION*/
 .call-to-action{
     position: absolute; /*Posição Absoluta*/
-    bottom: 32px;
-    font-size: 1em;
-    border: none;
-    background-color: #40D00D;
-    color: #fff;
-    width: 365px;
-    height: 48px;
-    font-family: "Noto Sans", sans-serif;
+    bottom: 32px; /*Coloca o elemento na parte inferior e dá uma posiciona 32px acima*/
 }
 
+/*BOTÃO CALL TO ACTION - SUBTITULO CONTEÚDO PRINCIPAL*/
 .call-to-action, main section h2{
-    font-family: "Noto Sans", sans-serif;
+    font-family: "Noto Sans", sans-serif; /*Fonte do Google*/
 }
 
+/*TODOS OS BOTÕES*/
 .call-to-action, .main-call-to-action, .form-call-to-action{
-    animation: pulse 2s infinite ease-in-out;
+    animation: pulse 2s infinite ease-in-out; /*Animação que faz o botão pulsar a cada 2 segundos*/
+    font-size: 1em;
+    border: none;
+    background-color: #40D00D;
+    color: #fff;
+    width: 365px;
+    height: 48px;
+    font-family: "Noto Sans", sans-serif;
+    width: 365px; /*Largura de 365px*/
+    height: 48px; /*Altura de 48px*/
 }
 
+/*TODOS OS BOTÕES AO PASSAR O MOUSE*/
 .call-to-action:hover, .main-call-to-action:hover, .form-call-to-action:hover{
-    animation: pulse 3s infinite ease-in-out;
-    cursor: pointer;
-    transform: scale(1.03)
+    animation: pulse 3s infinite ease-in-out; /*Animação que faz o botão pulsar a cada 3 segundos*/
+    cursor: pointer; /*Mãozinha do Mouse*/
+    transform: scale(1.03) /*Aumenta o botão em 3%*/
 }
 
+/*CONTEÚDO PRINCIPAL*/
 main{
-    width: 80%;
+    width: 80%; /*Largura de 80%*/
 }
 
+/*SEÇÃO DO CONTEÚDO PRINCIPAL*/
 main section{
-    margin: 96px 0 160px 0;
-    display: flex;
+    margin: 96px 0 160px 0; /*Margem (Topo - Direita - Embaixo - Esquerda)*/
+    display: flex; /*Flexbox*/
 }
 
-main section p{
-    width: 100%;
-    margin: 0 16px;
-    font-size: 1.5em;
-    text-align: center;
-}
-
+/*TODOS OS SUBTITULOS*/
 h2{
-    font-weight: 300;
-    margin: 16px 0;
-    font-size: 2.5em;
+    font-weight: 300; /*Peso da Fonte*/
+    margin: 16px 0; /*Margem (Topo e Embaixo) | (Esquerda e Direita)*/
+    font-size: 2.5em; /*Tamanho da fonte em 250%*/
 }
 
+/*CONTAINER DO TEXTO DO CONTEÚDO PRINCIPAL*/
 .text-main-content{
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;   
+    width: 70%; /*Largura de 70%*/
+    display: flex; /*Flexbox*/
+    flex-direction: column; /*Alinha o Texto em Colunas*/
+    align-items: center; /*Alinha o texto ao centro*/
 }
 
+/*TEXTO DO CONTEÚDO PRINCIPAL*/
 .text-main-content p{
-    margin: 32px 0 0 48px;
+    margin: 32px 0 0 48px; /*Margem (Topo - Direita - Embaixo - Esquerda)*/
+    width: 100%; /*Largura de 100%*/
+    font-size: 1.5em; /*Tamanho da fonte em 150%*/
+    text-align: center; /*Alinha o texto ao centro*/
 }
 
+/*BOTÃO DO CONTEÚDO PRINCIPAL*/
 .main-call-to-action{
-    margin-top: 88px;
-    position: relative;
-    bottom: 0;
-    font-size: 1em;
-    border: none;
-    background-color: #40D00D;
-    color: #fff;
-    width: 365px;
-    height: 48px;
-    font-family: "Noto Sans", sans-serif;
-
+    margin-top: 88px; /*Margem do Topo*/
+    position: relative; /*Posição Relativa*/
+    bottom: 0; /*Botão em baixo*/
 }
 
+/*CONTAINER DA IMAGEM DO CONTEÚDO PRINCIPAL*/
 .main-image-container{
-    display: flex;
-    margin: 64px 0;
+    display: flex; /*Flexbox*/
+    margin: 64px 0; /*Margem (Topo e Embaixo) - (Esquerda e Direita)*/
 }
 
+/*FORMULÁRIO*/
 form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: "Noto Sans", sans-serif;
+    display: flex; /*Flexbox*/
+    flex-direction: column; /*Alinhamento em Colunas*/
+    align-items: center; /*Alinha o texto ao centro*/
+    font-family: "Noto Sans", sans-serif; /*Fonte do Google*/
 }
 
+/*TITULO DO FORMULÁRIO*/
 form h2{
-    margin-bottom: 48px;
+    margin-bottom: 48px; /*Margem abaixo do Formulário*/
 }
 
+/*LABEL DO FORMULÁRIO - TITULO DOS INPUTS*/
 form label{
-    font-size: 1.2em;
-    text-align: center;
+    font-size: 1.2em; /*Tamanho da fonte de 120%*/
+    text-align: center; /*Alinha o texto ao Centro*/
 }
 
+/*INPUT DOS FORMULÁRIO*/
 form input{
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    font-weight: bold;
-    font-size: 0.95em;
-    height: 32px;
-    margin: 16px 0 32px 0;
-    width: 80vw;
+    background-color: #333; /*Cor de Fundo*/
+    color: #fff; /*Cor do Texto - Branco*/
+    text-align: center; /*Alinha o Texto ao Centro*/
+    font-weight: bold; /*Fonte em Negrito*/
+    font-size: 0.95em; /*Tamanho da fonte de 95%*/
+    height: 32px; /*Altura de 32px*/
+    margin: 16px 0 32px 0; /*Margem - Topo - Direita - Embaixo - Esquerda*/
+    width: 80vw; /*Largura de 80% da Tela (Viewport)*/
 }
 
+/*BOTÃO DO FORMULÁRIO*/
 .form-call-to-action{
-    margin: 16px 0 96px 0;
-    font-size: 1em;
-    border: none;
-    background-color: #40D00D;
-    color: #fff;
-    width: 365px;
-    height: 48px;
-    font-family: "Noto Sans", sans-serif;
+    margin: 16px 0 96px 0; /*Margem - Topo - Direita - Embaixo - Esquerda*/
 }
 
+/*MENSAGEM DA VALIDAÇÃO DO EMAIL*/
 #mensagemValidacao{
-    text-align: center;
-    width: 20vw;
-    margin-bottom: 64px;
+    text-align: center; /*Alinha o Texto ao Centro*/
+    width: 20vw; /*Largura de 20% da Tela (Viewport)*/
+    margin-bottom: 64px; /*Margem em baixo de 64px*/
 }
 
+/*BOTÃO DO WHATSAPP*/
 #whatsapp{
-    animation: pulse 1.2s infinite ease-in-out;
-    width: 80px;
-    position: fixed;
-    bottom: 16px;
-    right: 16px;
+    animation: pulse 2s infinite ease-in-out; /*Animação que faz o botão pulsar a cada 2 segundos*/
+    width: 80px; /*Largura de 80px*/
+    position: fixed; /*Posição Fixa na Tela*/
+    bottom: 16px; /*Botão em baixo de 16 pixels do Bottom*/
+    right: 16px; /*Direita  em 16 pixels do Right*/
 }
 
+/*ANIMAÇÃO*/
 @keyframes pulse{
     0%{
-        transform: scale(1);
+        transform: scale(1); /*Escala de tamanho em 100%*/
     }
 
     50%{
-        transform: scale(1.05);
+        transform: scale(1.05); /*Escala de tamanho em 150%*/
     }
 
     100%{
-        transform: scale(1);
+        transform: scale(1); /*Escala de tamanho em 100%*/
     }
 }

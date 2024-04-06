@@ -1,121 +1,147 @@
+/*TABLET*/
 @media screen and (max-width: 934px) {
+    /*CONTEÚDO DA PÁGINA*/
     body{
-        justify-content: center;
+        justify-content: center; /*Alinha ao centro no eixo principal*/
     }
+
+    /*CABEÇALHO - SEÇÃO DO CONTEÚDO PRINCIPAL*/
     header, main section{
-        flex-direction: column;
+        flex-direction: column; /*Alinha em Colunas*/
     }
 
+    /*SEÇÃO DO CONTEÚDO PRINCIPAL*/
     main section{
-        display: flex;
-        align-items: center;
+        display: flex; /*Flexbox*/
+        align-items: center; /*Alinha ao centro no eixo perpendicular*/
     }
 
+    /*TEXTO DO CONTEÚDO PRINCIPAL*/
     .text-main-content p{
-        margin: 32px 0 0 0;
+        margin: 32px 0 0 0; /*Margem (top/right/bottom/left)*/
     }
 
+    /*TEXTO DO CABEÇALHO - CONTAINER DO CONTEÚDO PRINCIPAL*/
     header h1, .text-main-content{
         width: 100%;
     }
 
+    /*TODAS AS IMAGENS*/
     .image-container, .main-image-container{
-        margin: 0 0 48px 0;
-        justify-content: center;
+        margin: 0 0 48px 0; /*Margem (top/right/bottom/left)*/
+        justify-content: center; /*Alinha ao centro no eixo principal*/
     }
 
+    /*BOTÕES*/
     .call-to-action, .container-button{
         position: static;
         margin-top: 48px;
     }
 }
 
+/*CELULAR MAIOR*/
 @media screen and (max-width: 634px) {
+    /*CABEÇALHO*/
     header{
-        margin: 96px 0 64px 0;
+        margin: 96px 0 64px 0; /*Margem - (top/right/bottom/left)*/
     }
 
-    main section p, header h1{
-        font-size: 1em;
+    /*TEXTO DO CONTEÚDO PRINCIPAL - TEXTO DO CABEÇALHO*/
+    .text-main-content p, header h1{
+        font-size: 1em; /*Tamanho da Fonte de 100%*/
     }   
 
+    /*TODOS OS BOTÕES*/
     .call-to-action, .main-call-to-action, .form-call-to-action{
-        width: 204px;
+        width: 204px; /*Largura de 204px*/
     }
 
+    /*TODOS OS BOTÕES - LABEL DO FORMULÁRIO (TITULO DO INPUT)*/
     form label, .call-to-action, .main-call-to-action, .form-call-to-action{
-        font-size: 0.88em;
+        font-size: 0.88em; /*Tamanho da Fonte de 88%*/
     }
 
+    /*TODOS OS SUBTITULOS*/
     h2{
-        font-size: 1.6em;
+        font-size: 1.6em; /*Tamanho da fonte em 160%*/
     }
 
+    /*LOGO DO WHATSAPP*/
     #whatsapp{
-        width: 56px;
+        width: 56px; /*Largura de 56px*/
     }
 }
 
+/*CELULAR MENOR*/
 @media screen and (max-width: 375px) {
     #whatsapp{
-        width: 48px;
+        width: 48px; /*Largura de 48px*/
     }   
 }
 
+/*MENOR TELA DE CELULAR*/
 @media screen and (max-width: 320px) {
-    main section p, header h1{
-        font-size: 0.9em;
+    /*TEXTO DO CONTEÚDO PRINCIPAL - TEXTO DO CABEÇALHO*/
+    .text-main-content p, header h1{
+        font-size: 0.9em; /*Tamanho da fonte em 90%*/
     }   
 
+    /*LABEL DO FORMULÁRIO (TITULO DO INPUT)*/
     form label{
-        font-size: 0.65em;
+        font-size: 0.65em; /*Tamanho da Fonte em 65%*/
     }
 
+    /*TODOS OS BOTÕES*/
     .call-to-action, .main-call-to-action, .form-call-to-action{
-        font-size: 0.75em;
+        width: 184px; /*Largura de 184px*/
+        height: 40px; /*Altura de 40px*/
+        font-size: 0.75em; /*Tamanho da fonte de 75%*/
     }
 
-    .call-to-action, .main-call-to-action, .form-call-to-action{
-        width: 184px;
-        height: 40px;
-    }
-
+    /*TODOS OS SUBTÍTULOS*/
     h2{
-        font-size: 1.35em;
+        font-size: 1.35em; /*Tamanho da fonte em 135%*/
     }
 
+    /*LOGO DO WHATSAPP*/
     #whatsapp{
-        width: 40px;
+        width: 40px; /*Largura de 40px*/
     }   
 }
 
+/*DESKTOP*/
 @media screen and  (min-width: 1322px) {
+    /*CONTAINER BOTÃO CABEÇALHO*/
     .container-button{
-        justify-content: start;
-        left: 15vw;
+        justify-content: start; /*Alinha no inicio do conteúdo principal*/
+        left: 15vw; /*Largura máxima em 15% da Tela (Viewport)*/
     }
 }
 
+/*DESKTOP MAIOR*/
 @media screen and  (min-width: 1645px) {
     .container-button{
-        left: 18vw;
+        left: 18vw;/*Largura máxima em 18% da Tela (Viewport)*/
     }
 }
 
-@media screen and  (min-width: 2000px) {
+/*DESKTOP COM TELA MAIOR*/
+@media screen and (min-width: 2000px) {
     .container-button{
-        left: 19vw;
+        left: 19vw; /*Largura máxima em 19% da Tela (Viewport)*/
     }
 }
 
+/*DESKTOP GRANDE*/
 @media screen and  (min-width: 2400px) {
     .container-button{
-        left: 21vw;
+        left: 21vw; /*Largura máxima em 21% da Tela (Viewport)*/
     }
 }
 
+/*MAIOR DESKTOP DISPONÍVEL*/
 @media screen and  (min-width: 2800px) {
     .container-button{
-        left: 22vw;
+        left: 22vw; /*Largura máxima em 22% da Tela (Viewport)*/
     }
 }
